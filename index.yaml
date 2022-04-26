@@ -28,7 +28,6 @@ voice:
     title: Automatic Speech Recognition ENG
     versions:
       2.2.0: 'automatic_speech_recognition_eng.yaml'
-      1.2.0: 'automatic_speech_recognition_eng_v1.2.yaml'
   text-to-speech_eng:
     title: Text-To-Speech ENG
     versions:
@@ -50,7 +49,6 @@ nlp:
     title: Inverse Text Normalisation ENG
     versions:
       2.0.0: 'inverse_text_normalisation_eng.yaml'
-      1.0.0: 'inverse_text_normalisation_eng_v1.0.yaml'
 utility:
   document_convertor_eng:
     title: Document Convertor ENG
