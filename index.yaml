@@ -1,0 +1,58 @@
+# This yaml file been updated for Sentient.io API Documentation v4.0.0 Beta
+# Latest update : 2021-Feb-4
+# For adding new microservices, please follow the format below:
+
+#-------------------------------------------------
+#
+# /// - microservice category have to be lower case,
+# ///the category name will be exactely same as the folder name
+# Category (voice / computer vision / nlp / etc.):
+#       /// - microservice SHOULD be same as the file name, except, don't need the version number
+#       microservice_name:
+#           /// - This will be the title appeared in the side navigation
+#           /// - Use the same title from info.title inside the microservice yaml file
+#           title: "Some Title"
+#           /// - Versions will contain version number and file name for each version
+#            versions:
+#               v1.0: "yaml_file_name_goes_here_v1.0.yaml"
+#               0.1.0: "yaml_file_name_goes_here_0.1.0.yaml"
+#
+#-------------------------------------------------
+
+# For Sentient.io API documentation maintenance:
+# There is a yamlPath variable contains the path of where the yaml file is stored
+# The final yaml link will be a combination of {{yamlPath + / + category + / + verions['v1.0']}}
+      
+voice:
+  automatic_speech_recognition_eng:
+    title: Automatic Speech Recognition ENG
+    versions:
+      2.2.0: 'automatic_speech_recognition_eng.yaml'
+      1.2.0: 'automatic_speech_recognition_eng_v1.2.yaml'
+  text-to-speech_eng:
+    title: Text-To-Speech ENG
+    versions:
+      1.2.1: 'text-to-speech_eng.yaml'
+nlp:
+  named-entity_recognition_eng:
+    title: Named-Entity Recognition ENG
+    versions:
+      2.0.0: 'named-entity_recognition_eng.yaml'
+  text_summarization:
+    title: Text Summarization
+    versions:
+      0.2.0: 'text_summarization.yaml'
+  sentiment_analysis_and_sarcasm_detection:
+    title: Sentiment Analysis and Sarcasm Detection
+    versions:
+      0.1.1: 'sentiment_analysis_and_sarcasm_detection.yaml'
+  inverse_text_normalisation_eng:
+    title: Inverse Text Normalisation ENG
+    versions:
+      2.0.0: 'inverse_text_normalisation_eng.yaml'
+      1.0.0: 'inverse_text_normalisation_eng_v1.0.yaml'
+utility:
+  document_convertor_eng:
+    title: Document Convertor ENG
+    versions:
+      1.0.0: 'document_conversion_eng.yaml'
